@@ -21,11 +21,22 @@
         padding-top: 70px;
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     }
+    
+    @media only screen and (max-width : 480px) {
+        .carousel-inner > .item > img {
+            margin: 0 auto;
+            width:100% !important;
+            height: 100% !important;
+        }
+    }
+   
+@media only screen and (min-width : 481px) {
 .carousel-inner > .item > img {
     margin: 0 auto;
     width: 50% !important;
-    height: 50% !important;
-}    
+    height: 50%;
+}  
+}
 .hide-bullets {
     list-style:none;
     margin-left: -40px;
@@ -43,6 +54,8 @@
 .carousel {
     background-color: transparent;
 }
+
+
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
